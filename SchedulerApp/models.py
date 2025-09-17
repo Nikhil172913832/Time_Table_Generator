@@ -84,11 +84,6 @@ class Course(models.Model):
     
     def __str__(self):
         return f'{self.course_number} {self.course_name}'
-
-
-
-    def __str__(self):
-        return self.name
     
 class Department(models.Model):
     dept_name = models.CharField(max_length=50)
